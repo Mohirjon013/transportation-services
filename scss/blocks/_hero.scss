@@ -37,11 +37,18 @@
     @include textstyle($fs:15px, $fw:400, $lh:18px, $clr:$text-white, $case:none, $mb:8px);
 }
 .form__input {
-    @include textstyle($fs:16px, $fw:400, $lh:20px, $clr:$text-white, $case:none, $mb:0px);
+    @include textstyle($fs:16px, $fw:400, $lh:20px, $clr:$text-black, $case:none, $mb:0px);
     padding: 18.5px 0 18.5px 46px;
     border-radius: 12px;
-
+    border: none;
     outline: none;
+    background-image: url(../images/location.svg);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: 14px center;
+}
+.form__label:nth-child(3) > .form__input{
+    background-image: url(../images/calendar.svg);
 }
 .hero__contant-wrapper {
     width: 576px;
