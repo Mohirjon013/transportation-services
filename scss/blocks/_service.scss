@@ -1,0 +1,86 @@
+.service-section {
+    padding: 118px 0 169px;
+}
+
+.service__text-wrapper {
+    width: 516px;
+    text-align: center;
+    margin: 0 auto;
+}
+.service__title {
+    @include textstyle($fs:38px, $fw:700, $lh:45px, $clr:$text-black, $case:capitalize, $mb:8px);
+}
+.service__text {
+    @include textstyle($fs:16px, $fw:00, $lh:24px, $clr:#000000AD, $case:capitalize, $mb:0);
+
+}
+.service__list {
+    @include display($ai:center, $js:space-between, $gap:4px);
+    row-gap: 30px;
+    flex-wrap: wrap;
+}
+.service__item {
+    width: 354px;
+    height: 458px;
+    cursor: pointer;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 2px 0 #000;
+    &:hover > .service__img{
+        height: 50%;
+    }
+    &:hover > .serivice__hidden-contant {
+        bottom: 0;
+    }
+}
+.service__img {
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s all linear;
+}
+.service__subcontant {
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+}
+.serivice__hidden-contant{
+    height: 50%;
+    padding: 20px;
+    position: absolute;
+    bottom: -100%;
+    background-color: white;
+    transition: 0.4s all linear;
+}
+.serivice__hidden-contant > h3{
+    @include textstyle($fs:24px, $fw:700, $lh:29px, $clr:$text-black, $case:capitalize, $mb:10px);
+}
+.serivice__hidden-contant > p{
+    @include textstyle($fs:14px, $fw:400, $lh:20px, $clr:$text-black, $case:capitalize, $mb:15px);
+}
+.serivice__hidden-contant > a{
+    @include textstyle($fs:15px, $fw:500, $lh:15px, $clr:$text-orange, $case:capitalize, $mb:15px);
+    padding-right: 30px;
+    position: relative;
+
+    &::after{
+        content: "";
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        right: 0;
+        top: 4px;
+        bottom: 0;
+        margin: auto 0;
+        background-image: url(../../images/arrow.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        
+    }
+}
+.service__subcontant > h3{
+    @include textstyle($fs:24px, $fw:700, $lh:29px, $clr:$text-white, $case:capitalize, $mb:15px);
+}
+.service__subcontant > p{
+    @include textstyle($fs:15px, $fw:500, $lh:18px, $clr:$text-white, $case:capitalize, $mb:0px);
+}

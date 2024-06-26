@@ -1,0 +1,42 @@
+.site-header {
+    padding: 20px 0;
+    background: #0000004D;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    z-index: 5;
+}
+.header{
+    @include display($ai:center, $js:space-between, $gap:0px)
+}
+.header__icon-link {
+    display: inline-block;
+}
+.header__navbar {
+    width: 501px;
+    @include display($ai:center, $js:none, $gap:25px)
+}
+.header__link {
+    color: $text-white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-transform: uppercase ;
+    transition: 0.3s all linear;
+    &:hover{
+        color: $text-orange;
+    }
+}
+.header__tel-link {
+    @include display($ai:center, $js:none, $gap:10px)
+}
+.header__tel-text {
+    color: $text-white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    transition: 0.3s all linear;
+    &:hover{
+        color: $text-orange;
+    }
+}

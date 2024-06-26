@@ -1,0 +1,73 @@
+.hero-section {
+    height: 100vh;
+    padding: 180px 0 93px;
+    background-image: url(../images/hero-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom center;
+    background-attachment: fixed;
+}
+.hero {
+    @include display($ai:none, $js:none, $gap:85px);
+}
+.hero__form-wrapper {
+    width: 449px;
+    background-color: #3A3A3A80;
+    padding: 25px;
+    border-radius: 10px;
+
+}
+.form__subcontent-title {
+    @include textstyle($fs:30px, $fw:500, $lh:36px, $clr:$text-white, $case:none, $mb:8px);
+    display: inline-block;
+}
+.form__text {
+    @include textstyle($fs:16px, $fw:400, $lh:19px, $clr:$text-white, $case:none, $mb:0px);
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E0E0E0;
+}
+.form__label {
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    
+}
+.form__label-text{
+    @include textstyle($fs:15px, $fw:400, $lh:18px, $clr:$text-white, $case:none, $mb:8px);
+}
+.form__input {
+    @include textstyle($fs:16px, $fw:400, $lh:20px, $clr:$text-white, $case:none, $mb:0px);
+    padding: 18.5px 0 18.5px 46px;
+    border-radius: 12px;
+
+    outline: none;
+}
+.hero__contant-wrapper {
+    width: 576px;
+
+}
+.hero__text {
+    position: relative;
+    @include textstyle($fs:14px, $fw:500, $lh:16px, $clr:$text-white, $case:uppercase, $mb:11px);
+    padding-left: 34px;
+    &::before{
+        content: "";
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        background-image: url(../images/hero-star.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto 0;
+    }
+}
+.hero__title {
+    @include textstyle($fs:56px, $fw:700, $lh:57.76px, $clr:$text-white, $case:uppercase, $mb:20px);
+}
+.hero__bottom-text {
+    @include textstyle($fs:20px, $fw:400, $lh:24px, $clr:$text-white, $case:capitalize, $mb:0px);
+}

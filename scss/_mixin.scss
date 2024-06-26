@@ -1,0 +1,15 @@
+@mixin display($ai:center, $js:none, $gap:0px){
+    display: flex;
+    align-items: $ai;
+    justify-content: $js;
+    gap: $gap;
+}
+
+@mixin textstyle($fs, $fw, $lh, $clr, $case, $mb){
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    color: $clr;
+    text-transform: $case;
+    margin-bottom: $mb;
+}
