@@ -15,7 +15,6 @@
     background-color: #3A3A3A80;
     padding: 25px;
     border-radius: 10px;
-
 }
 .form__subcontent-title {
     @include textstyle($fs:30px, $fw:500, $lh:36px, $clr:$text-white, $case:none, $mb:8px);
@@ -27,10 +26,10 @@
     border-bottom: 1px solid #E0E0E0;
 }
 .form__label {
-
     display: flex;
     flex-direction: column;
     margin-top: 25px;
+    
     
 }
 .form__label-text{
@@ -52,7 +51,7 @@
 }
 .hero__contant-wrapper {
     width: 576px;
-
+    margin-top: 43px;
 }
 .hero__text {
     position: relative;
@@ -77,4 +76,48 @@
 }
 .hero__bottom-text {
     @include textstyle($fs:20px, $fw:400, $lh:24px, $clr:$text-white, $case:capitalize, $mb:0px);
+}
+.form__label-subtext{
+    @include textstyle($fs:15px, $fw:400, $lh:18.15px, $clr:$text-white, $case:none, $mb:8px);
+    margin-top: 15px;
+    display: inline-block;
+}
+.form__radio-wrapper {
+    @include display($ai:center, $js:space-between, $gap:0px);
+    border-bottom: 1px solid #E0E0E0 ;
+    padding-bottom: 25px;
+}
+.form__radio-label {
+    width: 49%;
+    padding: 15px ;
+    background-color: white;
+    border-radius: 12px;
+    @include display($ai:center, $js:start, $gap:12px);
+}
+.form__custum-radio {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1px solid #D3D3D3;
+}
+.radio-input:checked ~ .form__custum-radio{
+    background-color: $text-orange;
+}
+.form__btn{
+    width: 399px;
+    margin-top: 20px;
+    padding: 17.5px 0;
+    text-align: center;
+    background-color: $text-orange;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    @include textstyle($fs:17px, $fw:500, $lh:17px, $clr:$text-white, $case:none, $mb:0px);
+    transition: 0.3s all linear;
+    cursor: pointer;
+    
+    &:hover{
+        background-color: transparent;
+        border: 1px solid $text-orange;
+        color: $text-orange;
+    }
 }

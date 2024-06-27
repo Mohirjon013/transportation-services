@@ -193,6 +193,7 @@ body {
 
 .hero__contant-wrapper {
   width: 576px;
+  margin-top: 43px;
 }
 
 .hero__text {
@@ -235,6 +236,71 @@ body {
   color: #FFFFFF;
   text-transform: capitalize;
   margin-bottom: 0px;
+}
+
+.form__label-subtext {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.15px;
+  color: #FFFFFF;
+  text-transform: none;
+  margin-bottom: 8px;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.form__radio-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+  border-bottom: 1px solid #E0E0E0;
+  padding-bottom: 25px;
+}
+
+.form__radio-label {
+  width: 49%;
+  padding: 15px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 12px;
+}
+
+.form__custum-radio {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #D3D3D3;
+}
+
+.radio-input:checked ~ .form__custum-radio {
+  background-color: #FF7D44;
+}
+
+.form__btn {
+  width: 399px;
+  margin-top: 20px;
+  padding: 17.5px 0;
+  text-align: center;
+  background-color: #FF7D44;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-transform: none;
+  margin-bottom: 0px;
+  transition: 0.3s all linear;
+  cursor: pointer;
+}
+.form__btn:hover {
+  background-color: transparent;
+  border: 1px solid #FF7D44;
+  color: #FF7D44;
 }
 
 .service-section {
