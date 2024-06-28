@@ -8,7 +8,6 @@
     <title>Transportation</title>
 </head>
 <body>
-    <!-- Site Header -->
     <header class="site-header">
         <div class="container">
             <div class="header">
@@ -29,9 +28,7 @@
             </div>
         </div>
     </header>
-    <!-- Site Header -->
     <main>
-        <!-- Hero section  -->
         <section class="hero-section">
             <div class="container">
                 <div class="hero">
@@ -50,18 +47,24 @@
                             <span class="form__label-text radio-input">Estimate time</span>
                             <input class="form__input" name="zip_code" type="datetime" placeholder="Select estimate time" required>
                         </label>
-                        <strong class="form__label-subtext">Transport type</strong>
-                        <div class="form__radio-wrapper">
-                            <label class="form__radio-label">
-                                <input class=" visually-hidden radio-input" name="type" type="radio">
-                                <div class="form__custum-radio"></div>
-                                <span>open</span>
-                            </label>
-                            <label class="form__radio-label">
-                                <input class=" visually-hidden radio-input" name="type" type="radio">
-                                <div class="form__custum-radio"></div>
-                                <span>Enclosed</span>
-                            </label>
+                        <div class="form__type-wrapper">
+                            <strong class="form__label-subtext">Transport type</strong>
+                            <div class="form__radio-wrapper">
+                                <label class="form__radio-label">
+                                    <input class=" visually-hidden radio-input" name="type" type="radio">
+                                    <div class="form__custum-radio">
+                                        <div class="form__custum-radio-inner"></div>
+                                    </div>
+                                    <span>open</span>
+                                </label>
+                                <label class="form__radio-label">
+                                    <input class=" visually-hidden radio-input" name="type" type="radio">
+                                    <div class="form__custum-radio">
+                                        <div class="form__custum-radio-inner"></div>
+                                    </div>
+                                    <span>Enclosed</span>
+                                </label>
+                            </div>
                         </div>
                         <button class="form__btn" type="submit">Get Shipment estimate</button>
                     </form>
@@ -169,14 +172,79 @@
                 </ul>
             </div>
         </section>
-        <!-- Hero section  -->
+        <section class="pro-section">
+            <div class="container">
+                <div class="pro">
+                    <div class="pro__contant-wrapper">
+                        <h2>We’re PROs at what we DO</h2>
+                        <p>Hire professional carriers for your shipments needs</p>
+                    </div>
+                    <ul class="pro__list">
+                        <li class="pro__item count">
+                            <div class="count__contant-wrapper">
+                                <img src="./images/pro-img.svg" alt="" width="30" height="30">
+                            </div>
+                            <strong class="count__strong"><span class="count-first">10</span>k</strong>
+                            <p>Client Served</p>
+                        </li>
+                        <li class="pro__item count">
+                            <div class="count__contant-wrapper">
+                                <img src="./images/pro-img.svg" alt="" width="30" height="30">
+                            </div>
+                            <strong><span class="count-second">23</span>k</strong>
+                            <p>Vehicle shipped</p>
+                        </li>
+                        <li class="pro__item count">
+                            <div class="count__contant-wrapper">
+                                <img src="./images/pro-img.svg" alt="" width="30" height="30">
+                            </div>
+                            <strong><span class="count-third">96</span>%</strong>
+                            <p>Satisfied customer</p>
+                        </li>
+                        <li class="pro__item count">
+                            <div class="count__contant-wrapper">
+                                <img src="./images/pro-img.svg" alt="" width="30" height="30">
+                            </div>
+                            <strong><span class="count-four">7</span>+</strong>
+                            <p>Years in operation</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="about-section">
+            <div class="container">
+                <div class="about">
+                    <div class="about-contant-wrapper">
+                        <h2>About <span class="about__title-clr">Us</span></h2>
+                        <p>
+                            Optimum Auto Transport is a vehicle shipping company in the USA. We make sure that our professional drivers serve customers with very high quality. Our priorities are putting customers’ satisfaction first place.
+                        </p>
+                        <img src="./images/about-img1.png" alt="" width="100%" height="333">
+                    </div>
+                    <div class="about-contant-wrapper">
+                        <img src="./images/about-img2.png" alt="" width="100%" height="333">
+                        <h2>Our <span class="about__title-clr">Mission</span></h2>
+                        <p>
+                            Our Mission is to help people to ship their cars from state to state SAFE, FAST, and AFFORDABLE way. We make sure your vehicle will be picked up on time and delivered on time.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <!-- Site Footer  -->
     <footer class="site-footer">
         <div class="container">
             <div class="footer"></div>
         </div>
     </footer>
-    <!-- Site Footer  -->
+
+
+
+
+
+
+    <script src="./js/mian.js"></script>
 </body>
 </html

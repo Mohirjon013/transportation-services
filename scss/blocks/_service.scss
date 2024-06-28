@@ -1,5 +1,8 @@
 .service-section {
     padding: 118px 0 169px;
+    background-image: url(../../images/service-bg1.png), url(../../images/service-bg2.png);
+    background-repeat: no-repeat;
+    background-position: left top , right bottom;
 }
 
 .service__text-wrapper {
@@ -11,12 +14,13 @@
     @include textstyle($fs:38px, $fw:700, $lh:45px, $clr:$text-black, $case:capitalize, $mb:8px);
 }
 .service__text {
-    @include textstyle($fs:16px, $fw:00, $lh:24px, $clr:#000000AD, $case:capitalize, $mb:0);
+    @include textstyle($fs:16px, $fw:00, $lh:24px, $clr:#000000AD, $case:capitalize, $mb:96px);
 
 }
 .service__list {
-    @include display($ai:center, $js:space-between, $gap:4px);
-    row-gap: 30px;
+    @include display($ai:center, $js:space-between, $gap:0px);
+    row-gap: 25px;
+    column-gap: 30px;
     flex-wrap: wrap;
 }
 .service__item {

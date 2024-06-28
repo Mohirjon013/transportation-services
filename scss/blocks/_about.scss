@@ -1,0 +1,25 @@
+.about-section {
+    padding: 100px 0;
+}
+
+.about {
+    @include display($ai:none, $js:none, $gap:24px);
+}
+.about-contant-wrapper {
+    width: 543px;
+}
+.about-contant-wrapper > h2 {
+    @include textstyle($fs:38px, $fw:700, $lh:45px, $clr:$text-black, $case:capitalize, $mb:16px);
+}
+.about-contant-wrapper > h2 > span{
+    color: $text-orange;
+}
+.about-contant-wrapper > p{
+    @include textstyle($fs:16px, $fw:400, $lh:24px, $clr:#000000AD, $case:capitalize, $mb:16px);
+}
+.about-contant-wrapper:first-child{
+    margin-top: 37px;
+}
+.about-contant-wrapper:last-child > h2{
+    margin-top: 50px;
+}

@@ -13,3 +13,15 @@
     text-transform: $case;
     margin-bottom: $mb;
 }
+@mixin btnstyle($width:400px, $p:0px, $btnfs, $btnfw, $btnlh, $btnclr, $btncase, $btnbg:$text-orange, $btnboder:transparent){
+    width: $width;
+    padding: $p;
+    text-align: center;
+    border-radius: 8px;
+    background-color: $btnbg;
+    border: 1px solid $btnboder;
+    cursor: pointer;
+    transition: 0.3s all linear;
+    @include textstyle($fs:$btnfs, $fw:$btnfw, $lh:$btnlh, $clr:$btnclr, $case:$btncase, $mb:0px);
+    
+}
